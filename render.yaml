@@ -1,0 +1,14 @@
+# render.yaml
+services:
+  - type: web
+    name: skylearn
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn config.wsgi:application"
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: config.settings
+      - key: SECRET_KEY
+        value: your-secret-key
+      - key: DEBUG
+        value: False
