@@ -5,6 +5,14 @@ from django.conf.urls.static import static
 from django.views import defaults as default_views
 from django.conf.urls.i18n import i18n_patterns
 from django.views.i18n import JavaScriptCatalog
+from django.contrib.auth import get_user_model
+
+# Fetch the custom user model
+User = get_user_model()
+
+# Check if admin user exists, and if not, create one
+if not User.objects.filter(username='admin').exists():
+    User.objects.create_superuser('admin', 'admin@example.com', 'adminpass123')
 
 admin.site.site_header = "SkyLearn Admin"
 
@@ -28,14 +36,13 @@ urlpatterns += i18n_patterns(
     path("payments/", include("payments.urls")),
 )
 
-
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.DEBUG:
     # This allows the error pages to be debugged during development, just visit
-    # these url in browser to see how these error pages look like.
+    # these URLS in the browser to see how these error pages look like.
     urlpatterns += [
         path(
             "400/",
@@ -54,8 +61,3 @@ if settings.DEBUG:
         ),
         path("500/", default_views.server_error),
     ]
-from django.contrib.auth.models import User
-
-# TEMPORARY: Create a default admin user if none exists
-if not User.objects.filter(username='admin').exists():
-    User.objects.create_superuser('admin', 'admin@example.com', 'adminpass123')
