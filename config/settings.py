@@ -8,7 +8,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Secret key & debug
 SECRET_KEY = config('SECRET_KEY', default='your-dev-secret-key')
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = True
 
 # Allowed hosts
 ALLOWED_HOSTS = ["127.0.0.1", "skylearnn.onrender.com"]
