@@ -54,3 +54,8 @@ if settings.DEBUG:
         ),
         path("500/", default_views.server_error),
     ]
+from django.contrib.auth.models import User
+
+# TEMPORARY: Create a default admin user if none exists
+if not User.objects.filter(username='admin').exists():
+    User.objects.create_superuser('admin', 'admin@example.com', 'adminpass123')
