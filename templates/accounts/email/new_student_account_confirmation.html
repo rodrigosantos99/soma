@@ -5,32 +5,27 @@
     <style>
       :root {
         --padding-base: 0.5rem;
-        --primary: #4caf50;
-        --primary-dark: #45a049;
-        --warning: #ffcb00;
-        --warning-dark: #edbe02;
-        --light: #ffffff;
-        --gmail-primary: #ebf0fb;
-        --gmail-secondary: #f6f9fd;
-        --body-color: var(--gmail-primary);
-        --grey-100: #e9e9e9;
-        --grey-200: #cfcfcf;
-        --grey-300: #9d9d9d;
-        --grey-400: #888888;
-        --grey-500: #555555;
-        --dark: #333333;
+        --primary: #A8E6CF; /* Mint Green */
+        --primary-dark: #8FD1B8; /* Darker Mint */
+        --accent: #FF6F61; /* Warm Coral */
+        --accent-dark: #E65B50; /* Darker Coral */
+        --background: #E4E7EB; /* Neutral Gray */
+        --dark: #2A2E5B; /* Deep Indigo */
+        --highlight: #7B68EE; /* Vivid Violet */
+        --reward: #F4C430; /* Golden Yellow */
+        --text-primary: #2A2E5B; /* Indigo for text */
+        --text-secondary: rgba(42, 46, 91, 0.6); /* Muted Indigo */
       }
 
       /* Reset default styling */
       body,
-		p,
-		h1,
-		h2,
-		h3
-
-		/* h4, */
-		/* h5, */
-		/* h6  */ {
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
         margin: 0;
         padding: 0;
       }
@@ -41,7 +36,7 @@
       h4,
       h5,
       h6 {
-        color: #012481;
+        color: var(--text-primary);
       }
 
       h1 {
@@ -49,14 +44,14 @@
       }
 
       a {
-        color: #005aeb;
+        color: var(--highlight);
         text-decoration: none;
       }
 
       p {
         font-size: 16px;
         margin-bottom: 15px;
-        color: #46528f;
+        color: var(--text-primary);
       }
 
       th,
@@ -65,15 +60,15 @@
       }
 
       .header {
-        background-color: #ebf0fb;
-        border-bottom: 1px solid #cfcfcf;
+        background: linear-gradient(135deg, var(--dark) 0%, var(--highlight) 100%);
+        border-bottom: 1px solid var(--text-secondary);
         padding: 0.5rem 2rem;
       }
 
       .footer {
         padding: 2rem;
         text-align: center;
-        background-color: #333333;
+        background-color: var(--dark);
       }
 
       .footer p {
@@ -94,9 +89,10 @@
 
       .card {
         background-color: #fff;
-        border: 1px solid #cfcfcf;
-        border-radius: 5px;
+        border: 1px solid var(--text-secondary);
+        border-radius: 10px;
         overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       }
 
       .card-body {
@@ -191,42 +187,42 @@
       }
 
       .text-muted {
-        color: rgba(70, 82, 143, 0.5) !important;
+        color: var(--text-secondary) !important;
       }
 
       .divider {
         width: 100%;
         height: 1px;
-        border-bottom: 1px solid #cfcfcf;
+        border-bottom: 1px solid var(--text-secondary);
       }
 
       .btn {
         display: inline-block;
-        background-color: #e9e9e9;
-        color: #333333;
+        background-color: var(--primary);
+        color: var(--text-primary);
         text-decoration: none;
         padding: 10px 20px;
-        border-radius: 3px;
+        border-radius: 5px;
         font-weight: bold;
         transition: background-color 0.3s ease;
       }
 
       .btn-primary {
-        background-color: #4caf50;
+        background-color: var(--accent);
         color: #fff !important;
       }
 
       .btn-primary:hover {
-        background-color: #45a049;
+        background-color: var(--accent-dark);
       }
 
       .btn-warning {
-        background-color: #ffcb00;
-        color: #333333 !important;
+        background-color: var(--reward);
+        color: var(--text-primary) !important;
       }
 
       .btn-warning:hover {
-        background-color: #edbe02;
+        background-color: #E0B32A; /* Darker Golden Yellow */
       }
 
       .link {
@@ -237,14 +233,20 @@
       .uppercase {
         text-transform: uppercase;
       }
+
+      mark {
+        background-color: var(--reward);
+        padding: 2px 5px;
+        border-radius: 3px;
+      }
     </style>
   </head>
 
   <body
     style="
       font-family: 'Helvetica Neue', Arial, sans-serif;
-      color: #46528f;
-      background-color: #ebf0fb;
+      color: var(--text-primary);
+      background-color: var(--background);
       padding: 20px;
       line-height: 1.4;
     "
@@ -294,7 +296,7 @@
           <p>Email: <a href="mailto:support@skylearn.com">support@skylearn.com</a></p>
           <p>Phone: <a href="tel:251900000000">+(251) 90-000-0000</a></p>
           <p>
-            &copy; 2023 <a href="skylearn.com">skylearn.com</a> | All rights reserved.
+            © 2023 <a href="skylearn.com">skylearn.com</a> | All rights reserved.
           </p>
         </div>
       </div>
