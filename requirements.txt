@@ -58,3 +58,4 @@ webencodings==0.5.1
 whitenoise==6.2.0
 wrapt==1.17.2
 xhtml2pdf==0.2.15
+gunicorn
