@@ -11,8 +11,8 @@ SECRET_KEY = config('SECRET_KEY', default='your-dev-secret-key')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
 # Allowed hosts and CSRF trusted origins
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost,127.0.0.1', cast=Csv)
-CSRF_TRUSTED_ORIGINS = config('CSRF_TRUSTED_ORIGINS', default='http://localhost', cast=Csv)
+ALLOWED_HOSTS = ["127.0.0.1", "skylearnn.onrender.com"]
+CSRF_TRUSTED_ORIGINS = config('CSRF_TRUSTED_ORIGINS', default='https://skylearnn.onrender.com', cast=Csv)
 
 # Custom user model
 AUTH_USER_MODEL = "accounts.User"
