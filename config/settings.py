@@ -1,6 +1,6 @@
 import os
 import dj_database_url
-from decouple import config, Csv
+from decouple import config
 from django.utils.translation import gettext_lazy as _
 
 # Base directory setup
@@ -10,9 +10,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config('SECRET_KEY', default='your-dev-secret-key')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-# Allowed hosts and CSRF trusted origins
+# Allowed hosts
 ALLOWED_HOSTS = ["127.0.0.1", "skylearnn.onrender.com"]
-CSRF_TRUSTED_ORIGINS = config('CSRF_TRUSTED_ORIGINS', default='https://skylearnn.onrender.com', cast=Csv)
+
+# CSRF trusted origins (manual list instead of Csv)
+CSRF_TRUSTED_ORIGINS = [
+    "https://skylearnn.onrender.com", 
+    "http://skylearnn.onrender.com"
+]
 
 # Custom user model
 AUTH_USER_MODEL = "accounts.User"
