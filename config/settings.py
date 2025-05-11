@@ -118,6 +118,22 @@ LANGUAGES = (
     ("fr", _("French")),
     ("es", _("Spanish")),
     ("ru", _("Russian")),
+    ("lu", _("Luganda")),  # Already included
+    ("sw", _("Swahili")),
+    ("teo", _("Ateso")),
+    ("lgg", _("Lugbara")),
+    ("nyn", _("Runyankole")),
+    ("lwo", _("Luo")),
+    ("ar", _("Arabic")),  # Added as requested
+    ("ach", _("Acholi")),
+    ("kdi", _("Kumam")),
+    ("lgj", _("Langi")),
+    ("laj", _("Lango")),
+    ("mas", _("Madi")),
+    ("snm", _("Sama")),
+    ("tci", _("Westo Nilotic")),
+    ("xog", _("Soga")),
+    ("kij", _("Kikuyu")),  # Though more common in Kenya, used in some Ugandan contexts
 )
 
 # Locale paths
