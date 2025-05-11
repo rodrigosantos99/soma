@@ -29,7 +29,7 @@ SECRET_KEY = config(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG", default=True, cast=bool)
 
-ALLOWED_HOSTS = ["127.0.0.1", "skylearnn.onrender.com"]
+ALLOWED_HOSTS = ["127.0.0.1", "adilmohak1.pythonanywhere.com", "skylearnn.onrender.com"]
 
 # CSRF trusted origins for Render
 CSRF_TRUSTED_ORIGINS = [
@@ -109,9 +109,10 @@ WSGI_APPLICATION = "config.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
-
 DATABASES = {
-    "default": dj_database_url.config(default=config("DATABASE_URL"))
+    "default": dj_database_url.config(
+        default=f"sqlite:///{os.path.join(BASE_DIR, 'db.sqlite3')}"
+    )
 }
 
 # https://docs.djangoproject.com/en/5.2/ref/settings/#std:setting-DEFAULT_AUTO_FIELD
@@ -145,7 +146,7 @@ LANGUAGES = (
     ("en", gettext("English")),
     ("fr", gettext("French")),
     ("es", gettext("Spanish")),
-    ("ru", gettext("Russian")),  # Fixed "Russia" to "Russian"
+    ("ru", gettext("Russia")),  # Should be "Russian" (typo)
 )
 
 LOCALE_PATHS = (os.path.join(BASE_DIR, "locale"),)
@@ -204,11 +205,18 @@ STRIPE_PUBLISHABLE_KEY = config("STRIPE_PUBLISHABLE_KEY", default="")
 # WhiteNoise configuration
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-STUDENT_ID_PREFIX = config("STUDENT_ID_PREFIX", default="ugr")
-LECTURER_ID_PREFIX = config("LECTURER_ID_PREFIX", default="lec")
+STUDENT_ID_PREFIX = config("STUDENT_ID_PREFIX", "ugr")
+LECTURER_ID_PREFIX = config("LECTURER_ID_PREFIX", "lec")
 
 # Constants
-YEARS = [(i, str(i)) for i in range(1, 7)]
+YEARS = (
+    (1, "1"),
+    (2, "2"),
+    (3, "3"),
+    (4, "4"),
+    (5, "5"),
+    (6, "6"),
+)
 
 BACHELOR_DEGREE = "Bachelor"
 MASTER_DEGREE = "Master"
