@@ -1,7 +1,17 @@
 import os
 import dj_database_url
 from decouple import config
-from django.utils.translation import gettext_lazy as _
+from django.utils.translation import gettext_lazy as _, LANG_INFO
+
+# Extend LANG_INFO with custom languages
+LANG_INFO.update({
+    'lg': {
+        'bidi': False,
+        'code': 'lg',
+        'name': 'Luganda',
+        'name_local': 'Luganda',
+    },
+})
 
 # Base directory setup
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -13,9 +23,9 @@ DEBUG = True
 # Allowed hosts
 ALLOWED_HOSTS = ["127.0.0.1", "skylearnn.onrender.com"]
 
-# CSRF trusted origins (manual list instead of Csv)
+# CSRF trusted origins
 CSRF_TRUSTED_ORIGINS = [
-    "https://skylearnn.onrender.com", 
+    "https://skylearnn.onrender.com",
     "http://skylearnn.onrender.com"
 ]
 
@@ -120,7 +130,7 @@ LANGUAGES = (
     ('ru', 'Russian'),
     ('ar', 'Arabic'),
     ('sw', 'Swahili'),
-    ('lg', 'Luganda'),  # Corrected from 'lu'
+    ('lg', 'Luganda'),  # Now supported with custom definition
 )
 
 # Locale paths
