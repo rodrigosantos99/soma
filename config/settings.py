@@ -1,17 +1,7 @@
 import os
 import dj_database_url
 from decouple import config
-from django.utils.translation import gettext_lazy as _, LANG_INFO
-
-# Extend LANG_INFO with custom languages
-LANG_INFO.update({
-    'lg': {
-        'bidi': False,
-        'code': 'lg',
-        'name': 'Luganda',
-        'name_local': 'Luganda',
-    },
-})
+from django.utils.translation import gettext_lazy as _
 
 # Base directory setup
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -122,7 +112,7 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
-# Supported languages
+# Supported languages (only Django-recognized codes)
 LANGUAGES = (
     ('en', 'English'),
     ('fr', 'French'),
@@ -130,7 +120,6 @@ LANGUAGES = (
     ('ru', 'Russian'),
     ('ar', 'Arabic'),
     ('sw', 'Swahili'),
-    ('lg', 'Luganda'),  # Now supported with custom definition
 )
 
 # Locale paths
