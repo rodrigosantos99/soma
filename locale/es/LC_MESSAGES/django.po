@@ -209,143 +209,39 @@ msgstr ""
 #: templates/aside.html:83 templates/aside.html:104 msgid “Quiz Progress Rec” msgstr “Registro de progreso de cuestionarios”
 
 
-#: templates/aside.html:86
-msgid "Course Allocation"
-msgstr ""
+#: templates/aside.html:86 msgid “Course Allocation” msgstr “Asignación de Curso”
+#: templates/aside.html:89 msgid “Manage Session” msgstr “Administrar Sesión”
+#: templates/aside.html:92 msgid “Manage Semester” msgstr “Administrar Semestre”
+#: templates/aside.html:98 templates/result/add_score.html:11 #: templates/result/add_score.html:17 templates/result/add_score_for.html:12 msgid “Manage Score” msgstr “Administrar Puntuación”
+#: templates/aside.html:107 templates/result/grade_results.html:10 #: templates/result/grade_results.html:28 msgid “Grade Results” msgstr “Resultados de Calificaciones”
+#: templates/aside.html:110 templates/result/assessment_results.html:10 #: templates/result/assessment_results.html:28 msgid “Assesment Results” msgstr “Resultados de Evaluación”
+#: templates/aside.html:113 msgid “Drop Course” msgstr “Abandonar Curso”
+#: templates/aside.html:119 msgid “Account Setting” msgstr “Configuración de Cuenta”
+#: templates/aside.html:122 templates/setting/password_change.html:21 #: templates/setting/password_change.html:25 msgid “Change Password” msgstr “Cambiar Contraseña”
+#: templates/aside.html:130 msgid “Read our” msgstr “Lee nuestra”
+#: templates/aside.html:130 msgid “Privacy” msgstr “Privacidad”
+#: templates/aside.html:130 #: venv/lib/python3.9/site-packages/django/db/models/base.py:1423 #: venv/lib/python3.9/site-packages/django/forms/models.py:893 msgid “and” msgstr “y”
+#: templates/aside.html:130 msgid “Terms of use.” msgstr “Términos de uso.”
+#: templates/aside.html:135 msgid “⭐️ Star This Project” msgstr “⭐️ Dale una estrella a este proyecto”
+#: templates/core/dashboard.html:40 msgid “Dashboard settings” msgstr “Configuraciones del tablero”
+#: templates/core/dashboard.html:41 msgid “Display grid” msgstr “Mostrar cuadrícula”
+#: templates/core/dashboard.html:42 msgid “Display table” msgstr “Mostrar tabla”
+#: templates/core/dashboard.html:44 msgid “Manage dashboard” msgstr “Administrar tablero”
+#: templates/core/dashboard.html:72 msgid “Administrators” msgstr “Administradores”
+#: templates/core/dashboard.html:81 msgid “Lab Assistance” msgstr “Asistencia de Laboratorio”
+#: templates/core/dashboard.html:90 msgid “Librarians” msgstr “Bibliotecarios”
+#: templates/core/dashboard.html:99 msgid “Supervisors” msgstr “Supervisores”
+#: templates/core/dashboard.html:108 msgid “Office Assistance” msgstr “Asistencia de Oficina”
+#: templates/core/dashboard.html:145 msgid “Latest activities” msgstr “Últimas actividades”
+#: templates/core/dashboard.html:150 msgid “No recent activity” msgstr “Sin actividad reciente”
+#: templates/core/dashboard.html:158 msgid “School Demographics” msgstr “Demografía Escolar”
+#: templates/core/index.html:40 msgid “Add New Post” msgstr “Añadir Nueva Publicación”
+#: templates/core/index.html:47 templates/core/index.html:55 #: templates/setting/admin_panel.html:80 templates/setting/admin_panel.html:81 msgid “Events” msgstr “Eventos”
+#: templates/core/index.html:65 msgid “news” msgstr “noticias”
+#: templates/core/index.html:65 msgid “events” msgstr “eventos”
+#: templates/core/index.html:76 templates/core/semester_list.html:69 #: templates/core/session_list.html:65 templates/course/course_single.html:87 #: templates/course/course_single.html:164 #: templates/course/program_single.html:78 templates/quiz/quiz_list.html:65 msgid “Edit” msgstr “Editar”
+#: templates/core/index.html:88 templates/upload/video_single.html:31 msgid “ago” msgstr “hace”
 
-#: templates/aside.html:89
-msgid "Manage Session"
-msgstr ""
-
-#: templates/aside.html:92
-msgid "Manage Semester"
-msgstr ""
-
-#: templates/aside.html:98 templates/result/add_score.html:11
-#: templates/result/add_score.html:17 templates/result/add_score_for.html:12
-msgid "Manage Score"
-msgstr ""
-
-#: templates/aside.html:107 templates/result/grade_results.html:10
-#: templates/result/grade_results.html:28
-msgid "Grade Results"
-msgstr ""
-
-#: templates/aside.html:110 templates/result/assessment_results.html:10
-#: templates/result/assessment_results.html:28
-msgid "Assesment Results"
-msgstr ""
-
-#: templates/aside.html:113
-msgid "Drop Course"
-msgstr ""
-
-#: templates/aside.html:119
-msgid "Account Setting"
-msgstr ""
-
-#: templates/aside.html:122 templates/setting/password_change.html:21
-#: templates/setting/password_change.html:25
-msgid "Change Password"
-msgstr ""
-
-#: templates/aside.html:130
-msgid "Read our"
-msgstr ""
-
-#: templates/aside.html:130
-msgid "Privacy"
-msgstr ""
-
-#: templates/aside.html:130
-#: venv/lib/python3.9/site-packages/django/db/models/base.py:1423
-#: venv/lib/python3.9/site-packages/django/forms/models.py:893
-msgid "and"
-msgstr ""
-
-#: templates/aside.html:130
-msgid "Terms of use."
-msgstr ""
-
-#: templates/aside.html:135
-msgid "⭐️ Star This Project"
-msgstr ""
-
-#: templates/core/dashboard.html:40
-msgid "Dashboard settings"
-msgstr ""
-
-#: templates/core/dashboard.html:41
-msgid "Display grid"
-msgstr ""
-
-#: templates/core/dashboard.html:42
-msgid "Display table"
-msgstr ""
-
-#: templates/core/dashboard.html:44
-msgid "Manage dashboard"
-msgstr ""
-
-#: templates/core/dashboard.html:72
-msgid "Administrators"
-msgstr ""
-
-#: templates/core/dashboard.html:81
-msgid "Lab Assistance"
-msgstr ""
-
-#: templates/core/dashboard.html:90
-msgid "Librarians"
-msgstr ""
-
-#: templates/core/dashboard.html:99
-msgid "Supervisors"
-msgstr ""
-
-#: templates/core/dashboard.html:108
-msgid "Office Assistance"
-msgstr ""
-
-#: templates/core/dashboard.html:145
-msgid "Latest activities"
-msgstr ""
-
-#: templates/core/dashboard.html:150
-msgid "No recent activity"
-msgstr ""
-
-#: templates/core/dashboard.html:158
-msgid "School Demographics"
-msgstr ""
-
-#: templates/core/index.html:40
-msgid "Add New Post"
-msgstr ""
-
-#: templates/core/index.html:47 templates/core/index.html:55
-#: templates/setting/admin_panel.html:80 templates/setting/admin_panel.html:81
-msgid "Events"
-msgstr ""
-
-#: templates/core/index.html:65
-msgid "news"
-msgstr ""
-
-#: templates/core/index.html:65
-msgid "events"
-msgstr ""
-
-#: templates/core/index.html:76 templates/core/semester_list.html:69
-#: templates/core/session_list.html:65 templates/course/course_single.html:87
-#: templates/course/course_single.html:164
-#: templates/course/program_single.html:78 templates/quiz/quiz_list.html:65
-msgid "Edit"
-msgstr ""
-
-#: templates/core/index.html:88 templates/upload/video_single.html:31
-msgid "ago"
-msgstr ""
 
 #: templates/core/index.html:98
 msgid "School news and events will appear here."
