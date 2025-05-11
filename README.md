@@ -1,4 +1,4 @@
-![Group 23](https://github.com/user-attachments/assets/4e84251a-27b0-462b-bd5e-fb0bcadc4694)
+![Group 23](https://raw.githubusercontent.com/jjingofarouk/soma/refs/heads/main/static/img/brand-filled.png)
 
 ### The world’s most high-end designed, lightweight, and feature-rich learning management system.
 
