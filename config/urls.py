@@ -14,7 +14,7 @@ User = get_user_model()
 if not User.objects.filter(username='admin').exists():
     User.objects.create_superuser('admin', 'admin@example.com', 'adminpass123')
 
-admin.site.site_header = "SkyLearn Admin"
+admin.site.site_header = "Soma Admin"
 
 urlpatterns = [
     path("admin/", admin.site.urls),
