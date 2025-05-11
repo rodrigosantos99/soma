@@ -20,54 +20,54 @@ msgstr ""
 
 #: accounts/models.py:14 course/models.py:24
 msgid "Bachelor"
-msgstr ""
+msgstr "Bbakyala"
 
 #: accounts/models.py:15 course/models.py:25
 msgid "Master"
-msgstr ""
+msgstr "Maasita"
 
 #: accounts/models.py:19 course/models.py:29
 msgid "Bachelor Degree"
-msgstr ""
+msgstr "Ddiguli ya Bbakyala"
 
 #: accounts/models.py:20 course/models.py:30
 msgid "Master Degree"
-msgstr ""
+msgstr "Ddiguli ya Maasita"
 
 #: accounts/models.py:23 accounts/models.py:32
 msgid "Father"
-msgstr ""
+msgstr "Taata"
 
 #: accounts/models.py:24 accounts/models.py:33
 msgid "Mother"
-msgstr ""
+msgstr "Maama"
 
 #: accounts/models.py:25 accounts/models.py:34
 msgid "Brother"
-msgstr ""
+msgstr "Mwannyinaze"
 
 #: accounts/models.py:26 accounts/models.py:35
 msgid "Sister"
-msgstr ""
+msgstr "Mwanyina"
 
 #: accounts/models.py:27 accounts/models.py:36
 msgid "Grand mother"
-msgstr ""
+msgstr "Jjajja Mukyala"
 
 #: accounts/models.py:28 accounts/models.py:37
-msgid "Grand father"
+msgid "Jjajja Mwami"
 msgstr ""
 
 #: accounts/models.py:29 accounts/models.py:38
 msgid "Other"
-msgstr ""
+msgstr "Omulala"
 
 #: accounts/models.py:67
 msgid "M"
 msgstr ""
 
 #: accounts/models.py:67
-msgid "Male"
+msgid "Musajja"
 msgstr ""
 
 #: accounts/models.py:67
@@ -75,7 +75,7 @@ msgid "F"
 msgstr ""
 
 #: accounts/models.py:67
-msgid "Female"
+msgid "Mukazi"
 msgstr ""
 
 #: accounts/models.py:103
@@ -84,51 +84,52 @@ msgstr ""
 
 #: accounts/models.py:105 templates/result/add_score_for.html:52
 msgid "Student"
-msgstr ""
+msgstr "Omuyizi"
 
 #: accounts/models.py:107 templates/course/course_allocation_view.html:32
 msgid "Lecturer"
-msgstr ""
+msgstr "Omusomesa"
 
 #: accounts/models.py:109
 msgid "Parent"
-msgstr ""
+msgstr "Omuzadde"
 
 #: accounts/validators.py:12
 msgid ""
 "Enter a valid username. This value may contain only English letters, "
 "numbers, and @/./+/-/_ characters."
-msgstr ""
+msgstr "Ssaamu erinnya ly'omukozesa erituufu. Omuwendo guno guyinza okubaamu ennukuta z'Olungereza zokka, "
+"Ennamba, ne @/./+/-/_ ennukuta."
 
 #: config/settings.py:148
 msgid "English"
-msgstr ""
+msgstr "Olungereza"
 
 #: config/settings.py:149
 msgid "French"
-msgstr ""
+msgstr "Olufalansa"
 
 #: config/settings.py:150
 msgid "Spanish"
-msgstr ""
+msgstr "Oluspaana"
 
 #: config/settings.py:151
 msgid "Russia"
-msgstr ""
+msgstr "Olu Russia"
 
 #: core/models.py:9 core/models.py:13 templates/core/index.html:47
 #: templates/core/index.html:52 templates/setting/admin_panel.html:80
 #: templates/setting/admin_panel.html:81
 msgid "News"
-msgstr ""
+msgstr "Amawulire"
 
 #: core/models.py:10 core/models.py:14
 msgid "Event"
-msgstr ""
+msgstr "Omukolo"
 
 #: core/models.py:17 core/models.py:22 course/models.py:33 course/models.py:38
 msgid "First"
-msgstr ""
+msgstr "Ekisooka"
 
 #: core/models.py:18 core/models.py:23 course/models.py:34 course/models.py:39
 msgid "Second"
