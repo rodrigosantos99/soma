@@ -120,10 +120,7 @@ LANGUAGES = (
     ('ru', 'Russian'),
     ('ar', 'Arabic'),
     ('sw', 'Swahili'),
-    ('ach', 'Acholi'),
     ('lg', 'Luganda'),  # Corrected from 'lu'
-    ('nyn', 'Runyankole'),
-    ('lwo', 'Luo'),
 )
 
 # Locale paths
