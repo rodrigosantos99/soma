@@ -186,102 +186,28 @@ msgstr ""
 #: templates/accounts/profile.html:103 templates/pdf/profile_single.html:94 msgid “Academic Year:” msgstr “Año académico:”
 
 
-#: templates/accounts/profile.html:103
-#: templates/accounts/profile_single.html:117
-#: templates/core/semester_list.html:41 templates/course/program_single.html:44
-#: templates/course/user_course_list.html:52
-#: templates/course/user_course_list.html:96
-#: templates/pdf/profile_single.html:94 templates/result/add_score.html:24
-#: templates/result/add_score_for.html:46 templates/setting/admin_panel.html:52
-msgid "Semester"
-msgstr ""
+#: templates/accounts/profile.html:103 #: templates/accounts/profile_single.html:117 #: templates/core/semester_list.html:41 templates/course/program_single.html:44 #: templates/course/user_course_list.html:52 #: templates/course/user_course_list.html:96 #: templates/pdf/profile_single.html:94 templates/result/add_score.html:24 #: templates/result/add_score_for.html:46 templates/setting/admin_panel.html:52 msgid “Semester” msgstr “Semestre”
+#: templates/accounts/profile.html:105 templates/pdf/profile_single.html:96 msgid “Registered Date:” msgstr “Fecha de registro:”
+#: templates/accounts/profile_single.html:30 msgid “Role” msgstr “Rol”
+#: templates/accounts/profile_single.html:43 msgid “Change Program” msgstr “Cambiar programa”
+#: templates/accounts/profile_single.html:90 msgid “First Name” msgstr “Nombre”
+#: templates/accounts/profile_single.html:91 msgid “Last Name” msgstr “Apellido”
+#: templates/accounts/profile_single.html:98 msgid “School” msgstr “Escuela”
+#: templates/accounts/profile_single.html:99 #: templates/course/program_single.html:42 msgid “Level” msgstr “Nivel”
+#: templates/accounts/profile_single.html:100 #: templates/accounts/student_list.html:39 templates/pdf/student_list.html:45 #: templates/search/search_view.html:49 templates/search/search_view.html:89 #: templates/search/search_view.html:124 msgid “Program” msgstr “Programa”
+#: templates/accounts/profile_single.html:108 msgid “Tel No.” msgstr “Número de teléfono”
+#: templates/accounts/profile_single.html:117 msgid “Academic Year” msgstr “Año académico”
+#: templates/accounts/profile_single.html:119 msgid “Registered Date” msgstr “Fecha de registro”
+#: templates/accounts/student_list.html:19 msgid “Add Student” msgstr “Añadir estudiante”
+#: templates/accounts/student_list.html:73 #: templates/result/add_score_for.html:105 msgid “No Student.” msgstr “No hay estudiantes.”
+#: templates/accounts/student_list.html:77 msgid “Add Student Now.” msgstr “Añadir estudiante ahora.”
+#: templates/aside.html:43 templates/core/dashboard.html:3 #: templates/core/dashboard.html:14 templates/core/dashboard.html:33 msgid “Dashboard” msgstr “Tablero”
+#: templates/aside.html:50 templates/navbar.html:41 msgid “Profile” msgstr “Perfil”
+#: templates/aside.html:55 templates/navbar.html:38 #: templates/setting/admin_panel.html:12 templates/setting/admin_panel.html:16 msgid “Admin Panel” msgstr “Panel de administración”
+#: templates/aside.html:72 msgid “Programs & Courses” msgstr “Programas y cursos”
+#: templates/aside.html:77 templates/quiz/sitting_list.html:10 msgid “Complete Exams” msgstr “Exámenes completados”
+#: templates/aside.html:83 templates/aside.html:104 msgid “Quiz Progress Rec” msgstr “Registro de progreso de cuestionarios”
 
-#: templates/accounts/profile.html:105 templates/pdf/profile_single.html:96
-msgid "Registered Date:"
-msgstr ""
-
-#: templates/accounts/profile_single.html:30
-msgid "Role"
-msgstr ""
-
-#: templates/accounts/profile_single.html:43
-msgid "Change Program"
-msgstr ""
-
-#: templates/accounts/profile_single.html:90
-msgid "First Name"
-msgstr ""
-
-#: templates/accounts/profile_single.html:91
-msgid "Last Name"
-msgstr ""
-
-#: templates/accounts/profile_single.html:98
-msgid "School"
-msgstr ""
-
-#: templates/accounts/profile_single.html:99
-#: templates/course/program_single.html:42
-msgid "Level"
-msgstr ""
-
-#: templates/accounts/profile_single.html:100
-#: templates/accounts/student_list.html:39 templates/pdf/student_list.html:45
-#: templates/search/search_view.html:49 templates/search/search_view.html:89
-#: templates/search/search_view.html:124
-msgid "Program"
-msgstr ""
-
-#: templates/accounts/profile_single.html:108
-msgid "Tel No."
-msgstr ""
-
-#: templates/accounts/profile_single.html:117
-msgid "Academic Year"
-msgstr ""
-
-#: templates/accounts/profile_single.html:119
-msgid "Registered Date"
-msgstr ""
-
-#: templates/accounts/student_list.html:19
-msgid "Add Student"
-msgstr ""
-
-#: templates/accounts/student_list.html:73
-#: templates/result/add_score_for.html:105
-msgid "No Student."
-msgstr ""
-
-#: templates/accounts/student_list.html:77
-msgid "Add Student Now."
-msgstr ""
-
-#: templates/aside.html:43 templates/core/dashboard.html:3
-#: templates/core/dashboard.html:14 templates/core/dashboard.html:33
-msgid "Dashboard"
-msgstr ""
-
-#: templates/aside.html:50 templates/navbar.html:41
-msgid "Profile"
-msgstr ""
-
-#: templates/aside.html:55 templates/navbar.html:38
-#: templates/setting/admin_panel.html:12 templates/setting/admin_panel.html:16
-msgid "Admin Panel"
-msgstr ""
-
-#: templates/aside.html:72
-msgid "Programs & Courses"
-msgstr ""
-
-#: templates/aside.html:77 templates/quiz/sitting_list.html:10
-msgid "Complete Exams"
-msgstr ""
-
-#: templates/aside.html:83 templates/aside.html:104
-msgid "Quiz Progress Rec"
-msgstr ""
 
 #: templates/aside.html:86
 msgid "Course Allocation"
