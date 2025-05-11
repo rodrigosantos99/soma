@@ -88,10 +88,4 @@ python manage.py runserver
 
 Last but not least, go to this address http://127.0.0.1:8000
 
-#### _Check [this page](https://adilmohak.github.io/dj-lms-starter/) for more insight and support._
-
-# References
-
-- Quiz part: https://github.com/tomwalker/django_quiz
-
 #### Show your support by ⭐️ this project!
