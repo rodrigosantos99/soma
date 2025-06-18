@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: soma-web
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: |
+      python manage.py migrate --noinput
+      python manage.py shell -c "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.filter(username='admin').exists() or User.objects.create_superuser('admin', 'admin@example.com', 'senha123')"
+      gunicorn config.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: config.settings
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: false
+      - key: PIP_NO_BUILD_ISOLATION
+        value: true
+      - fromDatabase:
+          name: soma-db
+          property: connectionString
+        key: DATABASE_URL
+
+databases:
+  - name: soma-db
+    plan: free
