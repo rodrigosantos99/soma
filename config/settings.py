@@ -29,7 +29,8 @@ SECRET_KEY = config(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG", default=True, cast=bool)
 
-ALLOWED_HOSTS = ["soma-fu7a.onrender.com,localhost,127.0.0.1"]
+ALLOWED_HOSTS = ["127.0.0.1", "soma-fu7a.onrender.com", "skylearnn.onrender.com"]
+
 
 # CSRF trusted origins for Render
 CSRF_TRUSTED_ORIGINS = [
