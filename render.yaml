@@ -1,11 +1,23 @@
 services:
   - type: web
-    name: django-web
+    name: soma-web
     env: python
-    buildCommand: "./build.sh"
+    buildCommand: "pip install -r requirements.txt"
     startCommand: "gunicorn config.wsgi:application"
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: config.settings
-      - key: PYTHON_VERSION
-        value: 3.11.11
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: false
+      - key: PIP_NO_BUILD_ISOLATION
+        value: true
+      - fromDatabase:
+          name: soma-db
+          property: connectionString
+        key: DATABASE_URL
+
+databases:
+  - name: soma-db
+    plan: free
