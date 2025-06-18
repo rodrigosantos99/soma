@@ -5,14 +5,14 @@ from django.conf.urls.static import static
 from django.views import defaults as default_views
 from django.conf.urls.i18n import i18n_patterns
 from django.views.i18n import JavaScriptCatalog
-from django.contrib.auth import get_user_model
+#from django.contrib.auth import get_user_model
 
 # Fetch the custom user model
-User = get_user_model()
+#User = get_user_model()
 
 # Check if admin user exists, and if not, create one
-if not User.objects.filter(username='admin').exists():
-    User.objects.create_superuser('admin', 'admin@example.com', 'adminpass123')
+#if not User.objects.filter(username='admin').exists():
+ #   User.objects.create_superuser('admin', 'admin@example.com', 'adminpass123')
 
 admin.site.site_header = "Soma Admin"
 
